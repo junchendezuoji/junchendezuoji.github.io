@@ -3,17 +3,63 @@
 <head>
   <meta charset="utf-8">
   
-  <title>chenjunchen blog</title>
+  <title>Position | chenjunchen blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description">
-<meta property="og:type" content="website">
-<meta property="og:title" content="chenjunchen blog">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="###Position
+
+
+
+值
+描述
+
+
+
+
+absolute
+生成绝对定位的元素，相对于static                                定位以外的第一个父元素进行定位。元素的位置通过“left”，“top”，“right”以及“bottom”属性进行规定。
+
+
+fixed
+生成绝对定位的元素，相对于浏览器窗口进行定位。元素的位置通过“left”，“top”，“rig">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Position">
+<meta property="og:url" content="http://yoursite.com/2016/07/22/thrid/index.html">
 <meta property="og:site_name" content="chenjunchen blog">
-<meta property="og:description">
+<meta property="og:description" content="###Position
+
+
+
+值
+描述
+
+
+
+
+absolute
+生成绝对定位的元素，相对于static                                定位以外的第一个父元素进行定位。元素的位置通过“left”，“top”，“right”以及“bottom”属性进行规定。
+
+
+fixed
+生成绝对定位的元素，相对于浏览器窗口进行定位。元素的位置通过“left”，“top”，“rig">
+<meta property="og:updated_time" content="2016-07-22T06:36:53.191Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="chenjunchen blog">
-<meta name="twitter:description">
+<meta name="twitter:title" content="Position">
+<meta name="twitter:description" content="###Position
+
+
+
+值
+描述
+
+
+
+
+absolute
+生成绝对定位的元素，相对于static                                定位以外的第一个父元素进行定位。元素的位置通过“left”，“top”，“right”以及“bottom”属性进行规定。
+
+
+fixed
+生成绝对定位的元素，相对于浏览器窗口进行定位。元素的位置通过“left”，“top”，“rig">
   
     <link rel="alternate" href="/atom.xml" title="chenjunchen blog" type="application/atom+xml">
   
@@ -62,9 +108,7 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-thrid" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-thrid" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2016/07/22/thrid/" class="article-date">
   <time datetime="2016-07-22T06:34:35.000Z" itemprop="datePublished">2016-07-22</time>
@@ -77,8 +121,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/07/22/thrid/">Position</a>
+    <h1 class="article-title" itemprop="name">
+      Position
     </h1>
   
 
@@ -117,11 +161,74 @@
 </tr>
 </tbody>
 </table>
-        
-          <p class="article-more-link">
-            <a href="/2016/07/22/thrid/#more">Read More</a>
-          </p>
-        
+<a id="more"></a>
+<p>&emsp;1.absolute(绝对定位)<br>&emsp;position属性为absolute的元素脱离了文本流，在文本中不再占有位置，可选取具有定位的父级对象或者body坐标原点进行定位，且元素可以用z-idenx进行层次分级。所以同一父元素下的所有absolute如果没有设置盒子属性的话，是根据父级对象的坐标作为始点的，左上角可能会会挤到同一位置。 </p>
+<pre><code>&lt;style&gt;
+body{
+    margin:0;   
+    padding:0;  
+    list-style:none;
+}
+.aside{
+    position:absolute;
+    width: 200px;
+    height: 200px;
+    /*margin-left: 90px;*/
+    background-color: black;
+    z-index: 2;
+}
+.bside{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    left: 20px;
+    top:20px;
+    /*margin-bottom: -100px;*/
+    background-color: green;
+    z-index: 1;
+}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;div class=&quot;aside&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;bside&quot;&gt;&lt;/div&gt;
+&lt;/body&gt;
+</code></pre><p>此刻body就是两个position为absolute的元素的父元素，left、top是相对于父元素来说的。</p>
+<p>&emsp;2.relative（相对定位）<br>&emsp;position属性为relative的元素是相对于元素本身在文档中应该出现的位置来移动这个元素，实际上该元素依然占据文档中原有的位置，只是视觉上相对原来的位置有移动。重要的是，该元素不会影响其他元素的位置。</p>
+<pre><code>&lt;style&gt;
+body{
+    margin:0;   
+    padding:0;  
+    list-style:none;
+}
+.aside{
+    position:fixed;
+    width: 200px;
+    height: 200px;
+    left: 20px;
+    top:110px;
+    /*margin-left: 90px;*/
+    background-color: black;
+    z-index: 2;
+}
+.bside{
+    /*position: absolute;*/
+    width: 300px;
+    height: 300px;
+    /*margin-bottom: -100px;*/
+    background-color: green;
+    z-index: 1;
+}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;div class=&quot;aside&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;bside&quot;&gt;&lt;/div&gt;
+&lt;/body&gt;
+</code></pre><p>aside的位置只是相当于他以前的位置进行移动，但并没有影响到bside的位置。</p>
+<p>&emsp;3.fixed（绝对定位）<br>&emsp;把position属性设置为fixed的元素的位置是对于浏览器的窗口而言的，始终处于窗口的某个位置。</p>
+<p>&emsp;4.float的问题<br>&emsp;在网页设计时经常会用到浮动来对页面进行布局，但是浮动所带来的不确定因素却很多（例如：IE浏览器的兼容问题）。相对来说，在有些布局中定位使用会更加简单、快捷、兼容性更好（relative与absolute相结合来使用）。</p>
+
       
     </div>
     <footer class="article-footer">
@@ -133,132 +240,19 @@
     </footer>
   </div>
   
-</article>
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-second" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2016/07/21/second/" class="article-date">
-  <time datetime="2016-07-21T08:09:40.000Z" itemprop="datePublished">2016-07-21</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/07/21/second/">盒子模型与BFC</a>
-    </h1>
+    <a href="/2016/07/21/second/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">盒子模型与BFC</div>
+    </a>
   
+</nav>
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>###盒子模型<br><img src="http://oann59wz4.bkt.clouddn.com/moxing.png" alt="enter image description here"><br>&emsp;1.盒子模型的范围包括 margin、border、padding、content,直接显示的是border、padding、content。内边距、边框和外边距不会影响内容区域的尺寸，但是会增加元素框的总尺寸。
-        
-          <p class="article-more-link">
-            <a href="/2016/07/21/second/#more">Read More</a>
-          </p>
-        
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/07/21/second/" data-id="ciqxdi0b50002k8r68qz9xjcq" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/博客/">博客</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/文章/">文章</a></li></ul>
-
-    </footer>
-  </div>
   
 </article>
-
-
-  
-    <article id="post-my-new-post" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2016/05/16/my-new-post/" class="article-date">
-  <time datetime="2016-05-16T01:34:24.000Z" itemprop="datePublished">2016-05-16</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/05/16/my-new-post/">新博客的第一篇文章</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>虽然以前也曾搭建过博客，但挂靠服务器，解析域名等全是靠人帮忙，可以说这次是我自己按照网上的指导搭建的，可以说是一次新的开始。  这里以后会成为我发布笔记和记录心情的平台，也许会有一些独到的见解，为大家提供一些思路。</p>
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/05/16/my-new-post/" data-id="ciqxdi0at0001k8r6kujbkvsy" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/博客/">博客</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/文章/">文章</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2016/05/16/hello-world/" class="article-date">
-  <time datetime="2016-05-16T01:07:02.581Z" itemprop="datePublished">2016-05-16</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/05/16/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.
-        
-          <p class="article-more-link">
-            <a href="/2016/05/16/hello-world/#more">Read More</a>
-          </p>
-        
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/05/16/hello-world/" data-id="ciqxdi0a40000k8r6uxisdl1c" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
 
 </section>
         
