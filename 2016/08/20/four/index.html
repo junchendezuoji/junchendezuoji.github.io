@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag -->
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Description-->
+    
+        <meta name="description" content="数据类型####typeof操作符&amp;emsp;ECMAScript是松散类型的，在变量申明时并没有使用与之类型相对应的关键字，如果在代码中想要获知某个变量的基本数据量，就可以使用typeof。这里要注意的是typeof返回的是字符串类型。
+
+
+
+类型
+含义
+
+
+
+
+undefined
+如果这个值未定">
+    
+
+    <!--Author-->
+    
+        <meta name="author" content="John Doe">
+    
+
+    <!--Open Graph Title-->
+    
+        <meta property="og:title" content="chenjunchen blog"/>
+    
+
+    <!--Open Graph Description-->
+    
+
+    <!--Open Graph Site Name-->
+    <meta property="og:site_name" content="chenjunchen blog"/>
+
+    <!--Type page-->
+    
+        <meta property="og:type" content="website" />
+    
+
+    <!--Page Cover-->
+    
+
+        <meta name="twitter:card" content="summary" />
+    
+
+    <!-- Title -->
+    
+    <title>chenjunchen blog</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"/>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+
+    <!-- Custom Fonts -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Gallery -->
+    <link href="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.css" type="text/css" rel="stylesheet" />
+
+    <!-- Google Analytics -->
+    
+
+
+</head>
+
+
+<body>
+
+    <!-- Menu -->
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">回到主页</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                
+                    <li>
+                        <a href="/">
+                            
+                                主页
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/archives">
+                            
+                                所有文章
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="https://github.com/junchendezuoji">
+                            
+                                <i class="fa fa-github fa-stack-2x"></i>
+                            
+                        </a>
+                    </li>
+                
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+
+    <!-- Main Content -->
+    <!-- Page Header -->
+<!-- Set your background image for this header in your post front-matter: cover -->
+
+<header class="intro-header" style="background-image: url('http://www.codeblocq.com/assets/projects/hexo-theme-clean-blog/img/home-bg.jpg')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <h1>Untitled</h1>
+                    
+                    <span class="meta">
+                        <!-- Date and Author -->
+                        
+                        2016-08-20
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+            <!-- Tags and categories -->
+           
+
+            <!-- Gallery -->
+            
+
+            <!-- Post Main Content -->
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <h1 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h1><p>####typeof操作符<br>&emsp;ECMAScript是松散类型的，在变量申明时并没有使用与之类型相对应的关键字，如果在代码中想要获知某个变量的基本数据量，就可以使用typeof。这里要注意的是typeof返回的是字符串类型。</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">类型</th>
+<th style="text-align:right">含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">undefined</td>
+<td style="text-align:right">如果这个值未定义</td>
+</tr>
+<tr>
+<td style="text-align:left">boolean</td>
+<td style="text-align:right">如果这个值是布尔值</td>
+</tr>
+<tr>
+<td style="text-align:left">string</td>
+<td style="text-align:right">如果这个值是字符串</td>
+</tr>
+<tr>
+<td style="text-align:left">number</td>
+<td style="text-align:right">如果这个值是数值</td>
+</tr>
+<tr>
+<td style="text-align:left">object</td>
+<td style="text-align:right">如果这个值是对象或null</td>
+</tr>
+<tr>
+<td style="text-align:left">function</td>
+<td style="text-align:right">这个值是函数</td>
+</tr>
+</tbody>
+</table>
+<pre><code>var testUndefined = undefined;  
+var testUndefined1;  
+var testNull = null;  
+var testObject = {a:1};  
+var testFunction = function(){return;};    
+console.log(testUndefined);//&quot;undefined&quot;  
+console.log(testUndefined1);//&quot;undefined&quot; 
+console.log(testNull);//&quot;object&quot;  
+console.log(testObject);//&quot;object&quot;  
+console.log(testFunction;//&quot;function&quot;  
+</code></pre><p><em>在ECMAScript中函数也是对象，但是函数又要一些区别与其他对象的特定，所以ECMAScript在使用typeof的时候将其区分开来。</em></p>
+<p>####基本数据类型<br>&emsp;1.undefined<br>&emsp;Undefined是只有一个值的数据类型，已经声明但是并未初始化的变量有拥有的默认值就是undefined。字面值undefined的主要目的是用于比较，引入这个值的目的是区分空对象指针与未经初始化的变量。<br>&emsp;未初始化的变量与尚未定义的变量还是有区别的，尚未定义的变量只能够使用typeof操作符检测其数据类型，对并未初始化的变量与尚未定义的变量使用typeof操作符return值相同。</p>
+<pre><code>var test1;
+//假如有未定义的变量test2
+console.log(test1);//&quot;undefined&quot;
+console.log(test2);//错误
+console.log(typeof(test1)==typeof(test2));//&quot;ture&quot;
+</code></pre><p>&emsp;2.Null<br>Null是只有一个值的数据类型，这个值就是null。<br>从逻辑角度看，null代表一个空对象指针，这也是typeof操作符检测null值return“object”的原因。<br><em>如果定义变量的打算将来用来保存对象，那么最好将该变量初始化为null而不是其他值</em>。这样一来，只要检测null值就可以知道相应的变量是否已经保存了一个对象的引用了。<br>&emsp;3.Boolean<br>&emsp;该类型只有两个字面值：true和false。这两个值与数字值不是一回事，因此true不一定等于1，而false也不一定等于0。在javascript中字母是区分大小写的，所以True和False不是Boolean的值。<br>　要将一个值转换为其对应的Boolean值，可以调用类型转换函数Boolean()，</p>
+<pre><code>alert(Boolean(&quot;a&quot;))//true  
+//将空字符串转化成false  
+alert(Boolean(&quot;&quot;))//false  
+alert(Boolean({a:&quot;a&quot;})//true
+//将对象转化成true  
+</code></pre><p><img src="http://oann59wz4.bkt.clouddn.com/%E8%BD%AC%E6%8D%A2%E8%A7%84%E5%88%99.png" alt="enter image description here"><br>由于布尔值常用与很多判断语句，这些转换规则对理解流控制语句（如if语句）自动执行相应的Boolean转换非常重要。<br>&emsp;4.Number<br> &emsp;这种类型用来表示整数和浮点数值，还有一种特殊的数值，即NaN（非数值 Not a Number）。<br>&emsp;a.整数最基本的数值字面量格式是十进制整数，除此之外还有8进制和16进制整数。</p>
+<pre><code>var intnum=18;
+var octnum=070;//转换为十进制的56
+var octnum1=08;//解析为8
+var hexnum=0xA;//转换为十进制的10
+</code></pre><p>在进行计算时，所有以八进制和十六进制表示的数值最终都将被转换成十进制。<br>&emsp;b.要定义浮点数必须包含小数点和小数点之后的一位数字（非0）。因为保存浮点数的内存空间是整数的两倍，所以js会不失时机的将浮点数转换为整数。</p>
+<pre><code>var floatnum=1.//解析为1
+var floatnum=1.0//解析为1
+</code></pre><p>科学计数法</p>
+<pre><code>var floatnum=6.66e4//66600
+</code></pre><p>浮点数在进行算术运算时，其精度远远不如整数，列如0.1+0.2!=0.3,而是0.3000000000004这类的；<br> 浮点字面量有趣之处在于，用它进行计算之前，真正存储的都是字符串。（节约内存呢？）<br>&emsp;c.数值范围<br>Max：Number.MAX_VALUE    能表示的最大数<br>Min：Number.MIN_VALUE       能表示的最小数<br>Number.POSITIVE_INFINITY       Infinity      Number.NEGATIVE_INFINITY（负）    -Infinity<br>某次计算超出JavaScript的值，这个数值就会转为 Infinity。<br>d.NaN数值用于表示一个本来要返回数值的操作数未返回数值的情况（这样就不会抛出错误了）。例如，在其他编程语言中，任何数值除以0都会导致错误，从而停止代码执行。但在JavaScript中，任何数值除以0会返回NaN，因此不会影响其他代码的执行。<br>特点一：任何涉及NaN的操作（NaN/10）都会返回NaN，这个特点在多步计算中可能导致问题。</p>
+<p>特点二：其值与任何值都不相等，包括他自己。 NaN == NaN return false；</p>
+<p>根据NaN的两个特点，js中定义了isNaN（）函数，这个函数接受一个参数，该参数可以是任何数据类型，函数帮助我们确定该参数是否“不是数值”。在函数接受到参数之后，会尝试将其转换为数值。某些不是数值的值会被直接转换为数值，比如（”10”或者boolean值），任何不能转换为数值的值都会让函数返回 true。</p>
+<pre><code>console.log(isNaN(10));//false
+console.log(isNaN(&quot;10&quot;));//将字符串转换为数值false
+console.log(isNaN(blue));//true不能被转换
+console.log(isNaN(true));//false能被转换
+</code></pre><p>f.数值转换<br>3个 函数可以把非数值转换为数值：Number，parseInt（俩参数），parseFloat（只有一个参数，且只能解析十进制）。<br>Number（）、parseInt( )、parseFloat( )转换规则。</p>
+<pre><code>var num1=Number(&quot;hello&quot;);  //NaN
+var num2=Number(&quot;&quot;);    //0
+var num3=Number(true);  //1
+var num4=parseInt(&quot;123asd&quot;) //123
+var num5=parseInt(&quot;0xA&quot;)   //10
+var num6=parseInt(&quot;0xAF&quot;,16)   //175
+var num7=parseFloat(&quot;0023.5&quot;)//23.5
+var num8=parseFloat(&quot;12&quot;) //12
+</code></pre><p>&emsp;5.string<br>   &emsp;String类型用于表示由零或多个16位Unicode字符组成的字符序列，即字符串。字符串可以由单引号(‘)或双引号(“)表示。<br>   a.  字符字面量<br>   b.字符串特点<br>         &emsp; &emsp;Js中的字符串是不可变的，要改变某个变量的字符串的值，只能销毁原来的字符串的值，然后创建一个新的字符串变量填充该变量。</p>
+<pre><code>Var lang = “java”;
+Lang = lang + “script”   
+</code></pre><p>c.转换为字符串<br>toString( )（一个可选参数：输出数值的基数）和String( )方法。还可以将要转换的值和字符串（””）相加。Tostring返回相应值的字符串体现，null类型和undefined类型没有toString( )方法。但String( )函数可以将任何类型的值转换为字符串。</p>
+<pre><code>var num=11;
+var num1=null;
+var num3;
+console.log(num.toString(2));//1010
+console.log(num.toString());//&quot;11&quot;
+console.log(String(num1));//null
+console.log(String(num3));//undefined
+</code></pre>
+
+                
+            </div>
+
+            <!-- Comments -->
+            
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    
+
+
+                </div>
+            
+        </div>
+    </div>
+</article>
+
+    <!-- Footer -->
+    <hr />
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                    
+
+                    
+
+                    
+                        <li>
+                            <a href="https://github.com/junchendezuoji" target="_blank">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    
+
+                    
+
+                    
+
+                    
+                </ul>
+                <p class="copyright text-muted">Original Theme <a target="_blank" href="http://startbootstrap.com/template-overviews/clean-blog/">Clean Blog</a> from <a href="http://startbootstrap.com/" target="_blank">Start Bootstrap</a></p>
+                <p class="copyright text-muted">Adapted for <a target="_blank" href="https://hexo.io/">Hexo</a> by <a href="http://www.codeblocq.com/" target="_blank">Jonathan Klughertz</a></p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+    <!-- After footer scripts -->
+    
+<!-- jQuery -->
+<script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+
+<!-- Bootstrap -->
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+<!-- Gallery -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+
+<!-- Disqus Comments -->
+
+
+
+</body>
+
+</html>
